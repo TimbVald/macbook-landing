@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import { cn } from '@/lib/utils';
 import useMacbookStore from '@/store'
+import clsx from 'clsx';
 import React from 'react'
 
 const ProductViewer = () => {
@@ -16,24 +16,24 @@ const ProductViewer = () => {
                     <div className='color-control'>
                         <div
                             onClick={() => setColor('#adb5db')}
-                            className={cn('bg-neutral-300', color === '#adb5db' && 'active')}
+                            className={clsx('bg-neutral-300', color === '#adb5db' && 'active')}
                         />
                         <div
                             onClick={() => setColor('#2e2c2e')}
-                            className={cn('bg-neutral-900', color === '#2e2c2e' && 'active')}
+                            className={clsx('bg-neutral-900', color === '#2e2c2e' && 'active')}
                         />
                     </div>
 
                     <div className='size-control'>
                         <div
                             onClick={() => setScale(0.06)}
-                            className={cn(scale === 0.06 ? 'bg-white text-black' : 'bg-transparent text-white')}
+                            className={clsx(scale === 0.06 ? 'bg-white text-black' : 'bg-transparent text-white')}
                         >
                             <p>14"</p>
                         </div>
                         <div
                             onClick={() => setScale(0.08)}
-                            className={cn(scale === 0.08 ? 'bg-white text-black' : 'bg-transparent text-white')}
+                            className={clsx(scale === 0.08 ? 'bg-white text-black' : 'bg-transparent text-white')}
                         >
                             <p>16"</p>
                         </div>
