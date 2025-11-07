@@ -21,8 +21,7 @@ const NavBar = () => {
                         <Image src="/search.svg" alt={`Search`} />
                     </button>
                     <button>
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img alt="Cart" src="/cart.svg"/>
+                        <Image alt="Cart" src="/cart.svg"/>
                     </button>
                 </div>
             </nav>
