@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client"
 import useMacbookStore from '@/store'
 import clsx from 'clsx';
 import React from 'react'
